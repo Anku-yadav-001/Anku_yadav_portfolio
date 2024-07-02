@@ -228,13 +228,30 @@ body
 
 }
 .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 40px;
-    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
     text-align: center;
+    overflow-x: auto;
+    background-color: transparent;
+}
+.services-list::-webkit-scrollbar {
+    height: 12px;
+}
+.services-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.services-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.services-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 .services-list div{
+    width: 30%;
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
@@ -244,8 +261,8 @@ body
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
     1px 1px 40px #0053b87f;
-
-
+    flex-shrink: 0;
+    margin: 30px;
 }
 .services-list div i{
     font-size: 50px;
@@ -260,6 +277,7 @@ body
 
 .container {
     padding: 90px;
+    
 }
 .services-list div a{
     text-decoration: none;
@@ -318,7 +336,6 @@ body
     1px 1px 40px #0053b87f; */
     border-right: 10px;
     border-radius: 20px;
-  
 }
 .techstack-list div h2{
     font-size: 30px;
@@ -455,10 +472,10 @@ body
     border-radius: 20px;
     padding: 20px 0 20px 0;
 }
-.git-contribution-list img{
+/* .git-contribution-list img{
     box-shadow: 1px 1px 20px #012290f7,
     1px 1px 40px #0053b87f;
-}
+} */
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
