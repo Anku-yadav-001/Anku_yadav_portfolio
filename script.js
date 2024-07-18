@@ -82,4 +82,23 @@ from.addEventListener('submit',(e)=>{
 //        id1.innerHTML="👋"
 
 // }
+document.getElementById('downloadResume').addEventListener('click', function() {
+    var fileUrl = "./aman_masai_resume.pdf";
 
+    fetch(fileUrl)
+        .then(response => response.blob())
+        .then(blob => {
+            var blobUrl = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = blobUrl;
+            a.download = 'aman_yadav_resume.pdf';
+            window.open(fileUrl, '_blank');
+            document.body.appendChild(a);
+            a.click();
+
+            document.body.removeChild(a);
+
+            window.URL.revokeObjectURL(blobUrl);
+        })
+        .catch(error => console.error('Error fetching the file:', error));
+});
