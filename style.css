@@ -358,11 +358,13 @@ body
     border-radius: 20px;
 }
 .services-list div button{
-   font-size: 20px;
+   font-size: 18px;
    padding: 8px 20px;
-   background-color: #051129;
+   border: 1px solid #555;
    border-radius: 10px;
   background-color: transparent;
+  color: #0ef;
+  margin: 5px;
 }
 .services-list div button:hover{
     transition: background 0.5s, transform 0.5s;
@@ -376,9 +378,13 @@ body
 .services-list div h2{
    text-decoration: underline;
    font-weight: 600;
+   font-size: 20px;
+   color: #0ef;
 }
 .services-list div h4{
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 300 !important;
+    margin-top: 5px;
 }
 .pjt{
   
@@ -485,10 +491,10 @@ body
     padding-top: 30px;
     background-color: #051129;
     padding-bottom: 30px;
+    
 }
-
 .content-text h2{
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1;
     text-align: center;
     text-decoration: underline;
@@ -513,8 +519,8 @@ body
 }
 .contact-list{
     margin-bottom: 3rem;
-
-}
+    
+} 
 .contact-list li{
     margin-bottom: 10px;
     display: block;
