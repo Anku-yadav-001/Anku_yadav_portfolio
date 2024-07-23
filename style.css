@@ -1256,12 +1256,3 @@ body
     }
 
 }
-
-#greeting{
-    background-color: blue;
-    text-align: center;
-}
-#greeting h1{
-    font-size: 18px;
-    padding: 5px 0;
-}
